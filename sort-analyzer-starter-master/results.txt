@@ -1,0 +1,45 @@
+SORT ANALYZER RESULTS
+**********************************************************
+BUBBLE SORT - Average Time to Sort Array
+Random Array: 569.1050000023097 milliseconds
+Reversed Array: 536.7350000014994 milliseconds
+Nearly Sorted Array: 407.5450000091223 milliseconds
+Few Unique Array: 407.64499999932013 milliseconds
+
+SELECTION SORT - Average Time to Sort Array
+Random Array: 64.98999999894295 milliseconds
+Reversed Array: 65.65999999293126 milliseconds
+Nearly Sorted Array: 63.459999990300275 milliseconds
+Few Unique Array: 64.71999999484979 milliseconds
+
+INSERTION SORT - Average Time to Sort Array
+Random Array: 38.330000010319054 milliseconds
+Reversed Array: 78.38000000629108 milliseconds
+Nearly Sorted Array: 1.089999990654178 milliseconds
+Few Unique Array: 0.8250000100815669 milliseconds
+***********************************************************
+
+
+SORT ANALYZER OBSERVATIONS
+***********************************************************
+What did you find interesting about the results?
+I found it interesting that simply changing the way you sort a set of data can affect the timing as to where it is 400 times faster.
+
+The Bubble Sort times should have shown an improved time for the
+Nearly Sorted and Few Unique arrays.  Explain why...
+Because bubble sort compares all elements individually to switch, thus not having to switch as often allows it to be much faster. 
+
+The Selection Sort times should have been fairly consistent for 
+all of the data arrays.  Explain why...
+This is because the selection sort checks for the min values and swaps once at the end with the min value, unlike bubble sort
+it doesnt swap everything individually thus allowing it to be more consistent in its timing as it's not doing addition swaps if the data is 
+more random.
+
+The Insertion Sort times should have been very fast for the
+Nearly Sorted and Few Unique arrays and much worse for the 
+Reversed array.  Explain why...
+Since incertion sort seperates groups into sorted and not sort, if some of the data is already sorted the size of the unsorted data is much
+smaller thus it only has to sort the selective unsorted part of the array, giving it much better times to an array that evenly randomized throughout.
+
+
+************************************************************
